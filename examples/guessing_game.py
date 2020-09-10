@@ -19,6 +19,7 @@ def guessing_game():
     if guess == secret_number:
       print("You win!")
       break
+
     elif guess < secret_number:
       print("Too small!")
     else:

@@ -10,13 +10,13 @@ def load_results():
 
 def save_results( w, t, l):
     text_file = open("history.txt", "w")
-    text_file.write( str(w) + "," + str(t) + "," + str(l))
+    text_file.write(str(w) + "," + str(t) + "," + str(l))
     text_file.close()
 
 #welcome message
 results = load_results()
 wins = int(results[0])
-ties = int( results[1])
+ties = int(results[1])
 losses = int(results[2])
 print("Welcome to Rock, Paper, Scissors!")
 print("Wins: %s, Ties: %s, Losses: %s" % (wins, ties, losses))
@@ -38,7 +38,7 @@ while not user == 9:
             print("Computer chose paper...computer wins :(")
             losses += 1
         else:
-            print("Computer chose scissors...you wins :)")
+            print("Computer chose scissors...you win :)")
             wins += 1
 
     #user chooses PAPER
@@ -67,7 +67,8 @@ while not user == 9:
     else:
         print("Invalid selection. Please try again.")
     #print updated stats
-    print("Wins: %s, Ties: %s, Losses: %s" % (wins, ties, losses))
+    # print("Wins: %s, Ties: %s, Losses: %s" % (wins, ties, losses))
+    print(f"Wins: {wins}, Ties: {ties}, Losses: {losses}")
 
     #prompt user to make another selection
     print("Please choose to continue...")
