@@ -90,9 +90,9 @@ def my_adv_game():
             sys.exit()
         elif player_choice.lower() in card_directions:
             new_player.move_player(player_choice.lower())
-        elif player_choice.lower() == 'take rock':
+        elif player_choice.lower() == 'get rock':
             new_player.get_item(rock)
-        elif player_choice.lower() == 'take stick':
+        elif player_choice.lower() == 'get stick':
             new_player.get_item(stick)
         elif player_choice.lower() == 'kill skunk':
             print("Congratulations! You will smell like skunk for eternity because you are cruel to animals. You LOSE!")
