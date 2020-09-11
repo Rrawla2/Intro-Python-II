@@ -1,5 +1,6 @@
 from room import Room
 from player import Player
+from item import Item
 import sys
 
 # Declare all the rooms
@@ -52,10 +53,20 @@ def my_adv_game():
         print(f"            Adventurer {new_player.name}            ")
         print("*" * 50)
         print("*" * 50)
-
+    else:
+        print("Please play again soon!")
+        sys.exit()
 
 # Write a loop that:
-    card_directions = ['n', 's', 'e', 'w', 'q']
+    card_directions = ['n', 's', 'e', 'w']
+
+    rock = Item("Rock", "It looks like a rock.")
+    stick = Item("Stick", "What a gnarly stick.")
+    skunk = Item("Skunk", "Watch out!\nOh no! It was NOT gold you smelled!")
+
+    room['narrow'].room_items.append(rock)
+    room['overlook'].room_items.append(stick)
+    room['treasure'].room_items.append(skunk)
 
 # * Prints the current room name
 # * Prints the current description (the textwrap module might be useful here).
@@ -65,21 +76,33 @@ def my_adv_game():
 # Print an error message if the movement isn't allowed.
 #
 # If the user enters "q", quit the game.
-    print("You may choose to travel [N]orth, [S}outh, [E]ast, or [W]est")
+    print(f"You are carrying a Backpack.")
+    print("You may choose to travel [N]orth, [S]outh, [E]ast, or [W]est")
     while True:
         print(f"You current location is: {new_player.current_room.name}.")
         print(f"{new_player.current_room.description}.")
-        print("*" * 50)
+        print("-" * 50)
         player_choice = input(f"Choose a direction to travel in your hunt for the Treasure!")
-        print("*" * 50)
+        print("_" * 50)
 
-        if player_input.lower() == 'q':
+        if player_choice.lower() == 'q':
             print("Please play again soon!")
             sys.exit()
         elif player_choice.lower() in card_directions:
             new_player.move_player(player_choice.lower())
+        elif player_choice.lower() == 'take rock':
+            new_player.get_item(rock)
+        elif player_choice.lower() == 'take stick':
+            new_player.get_item(stick)
+        elif player_choice.lower() == 'kill skunk':
+            print("Congratulations! You will smell like skunk for eternity because you are cruel to animals. You LOSE!")
+            sys.exit()
+        elif player_choice.lower() == 'drop rock':
+            new_player.drop_item(rock)
+        elif player_choice.lower() == 'drop stick':
+            new_player.drop_item(stick)
         else:
-            print(f"That is not a valid direction to travel")
+            print(f"That is not a valid direction to travel.")
 
 
 my_adv_game()

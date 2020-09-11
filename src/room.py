@@ -2,10 +2,10 @@
 # description attributes.
 
 class Room:
-    def __init__(self, name, description, items):
+    def __init__(self, name, description):
         self.name = name
         self.description = description
-        self.items = []
+        self.room_items = []
         self.n_to = None
         self.e_to = None
         self.w_to = None
@@ -26,3 +26,9 @@ class Room:
         else:
             return None
 
+    def my_current_room(self):
+        if self.room_items:
+            for item in self.room_items:
+                print(f"You look around and see a {item.name}. {item.description}")
+        else:
+            print("What lovely scenery!")

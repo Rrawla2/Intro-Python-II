@@ -21,10 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e307557f-3dcb-44ae-9685-a67083114230" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/guessing_game.py" beforeDir="false" afterPath="$PROJECT_DIR$/examples/guessing_game.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/history.txt" beforeDir="false" afterPath="$PROJECT_DIR$/examples/history.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/rock_paper_scissors.py" beforeDir="false" afterPath="$PROJECT_DIR$/examples/rock_paper_scissors.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/adv.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/adv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/item.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/item.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/player.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/player.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/room.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/room.py" afterDir="false" />
     </list>
@@ -32,6 +30,13 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -138,9 +143,9 @@
       <list>
         <item itemvalue="Python.adv" />
         <item itemvalue="Python.adv" />
-        <item itemvalue="Python.guessing_game" />
-        <item itemvalue="Python.guessing_game" />
         <item itemvalue="Python.adv" />
+        <item itemvalue="Python.adv" />
+        <item itemvalue="Python.guessing_game" />
       </list>
     </recent_temporary>
   </component>
@@ -160,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599624253310</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="mvp complete">
+      <created>1599721975698</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1599721975698</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -177,6 +189,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
+    <MESSAGE value="mvp complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="mvp complete" />
   </component>
 </project>
