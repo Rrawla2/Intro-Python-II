@@ -78,8 +78,9 @@ def my_adv_game():
 # If the user enters "q", quit the game.
     print(f"You are carrying a Backpack.")
     print("You may choose to travel [N]orth, [S]outh, [E]ast, or [W]est")
+
     while True:
-        print(f"You current location is: {new_player.current_room.name}.")
+        print(f"Your current location is: {new_player.current_room.name}.")
         print(f"{new_player.current_room.description}.")
         print("-" * 50)
         player_choice = input(f"Choose a direction to travel in your hunt for the Treasure!")
@@ -90,17 +91,15 @@ def my_adv_game():
             sys.exit()
         elif player_choice.lower() in card_directions:
             new_player.move_player(player_choice.lower())
-        elif player_choice.lower() == 'get rock':
-            new_player.get_item(rock)
-        elif player_choice.lower() == 'get stick':
-            new_player.get_item(stick)
+        elif 'get' in player_choice.lower():
+            get_list = player_choice.split(" ")
+            new_player.get_item(get_list[1])
+        elif 'drop' in player_choice.lower():
+            drop_string = player_choice.split(" ")
+            new_player.drop_item(drop_string[1])
         elif player_choice.lower() == 'kill skunk':
             print("Congratulations! You will smell like skunk for eternity because you are cruel to animals. You LOSE!")
             sys.exit()
-        elif player_choice.lower() == 'drop rock':
-            new_player.drop_item(rock)
-        elif player_choice.lower() == 'drop stick':
-            new_player.drop_item(stick)
         else:
             print(f"That is not a valid direction to travel.")
 

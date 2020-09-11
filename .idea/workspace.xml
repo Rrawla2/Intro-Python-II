@@ -19,7 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e307557f-3dcb-44ae-9685-a67083114230" name="Default Changelist" comment="" />
+    <list default="true" id="e307557f-3dcb-44ae-9685-a67083114230" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/adv.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/adv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/item.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/item.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/player.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/player.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -173,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599861288026</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="moved items code to the correct file.">
+      <created>1599861821138</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1599861821138</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -192,6 +204,7 @@
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="mvp complete" />
     <MESSAGE value="added items to rooms, take item and drop item" />
-    <option name="LAST_COMMIT_MESSAGE" value="added items to rooms, take item and drop item" />
+    <MESSAGE value="moved items code to the correct file." />
+    <option name="LAST_COMMIT_MESSAGE" value="moved items code to the correct file." />
   </component>
 </project>
