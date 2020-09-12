@@ -60,9 +60,9 @@ def my_adv_game():
 # Write a loop that:
     card_directions = ['n', 's', 'e', 'w']
 
-    rock = Item("Rock", "It looks like a rock.")
-    stick = Item("Stick", "What a gnarly stick.")
-    skunk = Item("Skunk", "Watch out!\nOh no! It was NOT gold you smelled!")
+    rock = Item("Rock", "You think you can [get rock].")
+    stick = Item("Stick", "What a gnarly stick. You think you can [get stick]")
+    skunk = Item("Skunk", "Watch out!\nOh no! It was NOT gold you smelled! You could [kill skunk].")
 
     room['narrow'].room_items.append(rock)
     room['overlook'].room_items.append(stick)
@@ -84,7 +84,7 @@ def my_adv_game():
         print(f"{new_player.current_room.description}.")
         print("-" * 50)
         player_choice = input(f"Choose a direction to travel in your hunt for the Treasure!")
-        print("_" * 50)
+        print("-" * 50)
 
         if player_choice.lower() == 'q':
             print("Please play again soon!")
@@ -93,10 +93,13 @@ def my_adv_game():
             new_player.move_player(player_choice.lower())
         elif 'get' in player_choice.lower():
             get_list = player_choice.split(" ")
-            new_player.get_item(get_list[1])
+            new_player.get_item(get_list[-1])
         elif 'drop' in player_choice.lower():
             drop_string = player_choice.split(" ")
-            new_player.drop_item(drop_string[1])
+            new_player.drop_item(drop_string[-1])
+        elif 'i' or 'inventory' in player_choice.lower():
+            open_string = player_choice.split(" ")
+            new_player.open_backpack(open_string[-1])
         elif player_choice.lower() == 'kill skunk':
             print("Congratulations! You will smell like skunk for eternity because you are cruel to animals. You LOSE!")
             sys.exit()

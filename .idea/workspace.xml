@@ -22,7 +22,6 @@
     <list default="true" id="e307557f-3dcb-44ae-9685-a67083114230" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/adv.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/adv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/item.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/item.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/player.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/player.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -185,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599861821138</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="changed get_item drop_item, split two word commands properly.">
+      <created>1599865002652</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1599865002652</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -205,6 +211,7 @@
     <MESSAGE value="mvp complete" />
     <MESSAGE value="added items to rooms, take item and drop item" />
     <MESSAGE value="moved items code to the correct file." />
-    <option name="LAST_COMMIT_MESSAGE" value="moved items code to the correct file." />
+    <MESSAGE value="changed get_item drop_item, split two word commands properly." />
+    <option name="LAST_COMMIT_MESSAGE" value="changed get_item drop_item, split two word commands properly." />
   </component>
 </project>
