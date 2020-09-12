@@ -89,6 +89,9 @@ def my_adv_game():
         if player_choice.lower() == 'q':
             print("Please play again soon!")
             sys.exit()
+        elif 'kill' in player_choice.lower():
+            print("Congratulations! You will smell like skunk for eternity because you are cruel to animals. You LOSE!")
+            sys.exit()
         elif player_choice.lower() in card_directions:
             new_player.move_player(player_choice.lower())
         elif 'get' in player_choice.lower():
@@ -100,9 +103,6 @@ def my_adv_game():
         elif 'i' or 'inventory' in player_choice.lower():
             open_string = player_choice.split(" ")
             new_player.open_backpack(open_string[-1])
-        elif player_choice.lower() == 'kill skunk':
-            print("Congratulations! You will smell like skunk for eternity because you are cruel to animals. You LOSE!")
-            sys.exit()
         else:
             print(f"That is not a valid direction to travel.")
 
